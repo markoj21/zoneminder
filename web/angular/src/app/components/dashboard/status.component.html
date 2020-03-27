@@ -1,0 +1,49 @@
+<div class="card" [ngBusy]="busy">
+    <div class="card-header">
+        <div class="d-flex justify-content-between align-items-center">
+            {{ 'Status' | transloco }}
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-sm btn-outline-primary mr-1" (click)="refresh()">{{ 'Refresh' | transloco }}</button>
+                <div class="btn-group" dropdown>
+                    <button id="button-basic" dropdownToggle type="button" class="btn btn-sm btn-outline-primary" aria-controls="dropdown-basic">
+                        <fa-icon [icon]="faEllipsisH"></fa-icon>
+                    </button>
+                    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+                    <li role="menuitem"><a class="dropdown-item" href="#">Default</a></li>
+                    <li role="menuitem"><a class="dropdown-item" href="#">{{ 'Restart' | transloco }}</a></li>
+                    <li role="menuitem"><a class="dropdown-item" href="#">{{ 'Stop' | transloco }}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="p-2">
+            <div class="row">
+                <div class="col-md-12">
+                    Version: 2.0.0 <a href="#" >Update Available</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    Status: Running 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    Load: 27.8% 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    Storage DB:7/151
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    Storage Local: 0% /tmp: 0%
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

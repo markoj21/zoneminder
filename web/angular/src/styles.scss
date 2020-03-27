@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+.flex-fill {
+    flex: 1 1 auto;
+    min-height: 100vh;
+}  
+
+// if you'd like to use it without importing all of bootstrap it requires
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~ngx-toastr/toastr-bs4-alert';
+
+// Import the font awesome animations
+@import './styles/font-awesome-animation.scss';
+@import './styles/animate.scss';
+
+/* Import Angular Busy styles */
+@import "~ng-busy/src/style/busy";
+
+.card-body {
+    padding: 0.0rem !important;
+}
+
+table {
+    margin-bottom: 0 !important;
+}
+
+table thead th {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+th {
+    font-weight: 600;
+}
+
+.ng-busy {
+    background-color: rgba(255,255,255,.67);
+}

@@ -1,0 +1,12 @@
+<button class="btn btn-primary mr-1" (click)="installTheme('light-theme')" [disabled]="loading">
+  <fa-icon *ngIf="loading" [spin]="true" [icon]="faSpinner"></fa-icon>
+  Light
+</button>
+<button class="btn btn-primary mr-1" (click)="installTheme('dark-theme')" [disabled]="loading">
+  <fa-icon *ngIf="loading" [spin]="true" [icon]="faSpinner"></fa-icon>
+  Dark
+</button>
+<button class="btn btn-primary mr-1" (click)="installTheme('sandstone-theme')" [disabled]="loading">
+  <fa-icon *ngIf="loading" [spin]="true" [icon]="faSpinner"></fa-icon>
+  Sand Stone
+</button>

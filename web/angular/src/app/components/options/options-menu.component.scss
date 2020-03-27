@@ -1,0 +1,9 @@
+.nav-item {
+    border-left: 2px solid transparent;
+}
+
+.link-active,
+.nav-item:hover
+{
+    border-left-color: #07689F !important;
+}

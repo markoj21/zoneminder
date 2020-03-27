@@ -1,0 +1,45 @@
+.nav-item a:not(.link-active),
+.link-active {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: #07689F;
+        height: 4px;
+      }
+}
+
+
+.nav-item a:not(.link-active) {
+    &:before {
+      content: "";
+      right: 100%;
+      -webkit-transition-property: right;
+      transition-property: right;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+
+    &:hover:before {
+      right: 0;
+    }
+  }
+
+.link-active {
+    &:before {
+      right: 0;
+    }
+}

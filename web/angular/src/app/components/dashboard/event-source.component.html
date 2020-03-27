@@ -1,0 +1,21 @@
+<div class="card" [ngBusy]="busy">
+    <div class="card-header">
+        <div class="d-flex justify-content-between align-items-center">
+            {{ 'EventSource' | transloco }}
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-sm btn-outline-primary" (click)="refreshData()">{{ 'Refresh' | transloco }}</button>                                    
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <canvas baseChart 
+        [data]="pieChartData" 
+        [labels]="pieChartLabels" 
+        [chartType]="pieChartType"
+        [options]="pieChartOptions"
+        [plugins]="pieChartPlugins"
+        [colors]="chartColors"
+        [legend]="pieChartLegend">
+        </canvas>
+    </div>
+</div>

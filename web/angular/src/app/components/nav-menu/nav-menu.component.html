@@ -1,0 +1,70 @@
+<header>
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']">{{ 'appTitle' | transloco }}</a>
+      <button class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              aria-label="Toggle navigation"
+              [attr.aria-expanded]="isExpanded"
+              (click)="toggle()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" [ngClass]="{ show: isExpanded }">
+        <ul class="navbar-nav flex-grow">
+          <li class="nav-item pr-1">
+            <a class="nav-link" [routerLink]="['/dashboard']" [routerLinkActive]="['link-active']">
+              {{ 'Dashboard' | transloco }}
+            </a>
+          </li>
+          <li class="nav-item pr-1" [routerLinkActive]="['link-active']">
+            <a class="nav-link" [routerLink]="['/options']">
+              {{ 'Options' | transloco }}
+            </a>
+          </li>
+          <li class="nav-item pr-1" [routerLinkActive]="['link-active']">
+            <a class="nav-link" [routerLink]="['/log']">
+              {{ 'Log' | transloco }}
+            </a>
+          </li>
+          <li class="nav-item pr-1" [routerLinkActive]="['link-active']">
+            <a class="nav-link" [routerLink]="['/groups']">
+              {{ 'Groups' | transloco }}
+            </a>
+          </li>
+          <li class="nav-item pr-1" [routerLinkActive]="['link-active']">
+            <a class="nav-link" [routerLink]="['/filters']">
+              {{ 'Filters' | transloco }}
+            </a>
+          </li>
+          <li class="nav-item pr-1" [routerLinkActive]="['link-active']">
+            <a class="nav-link" [routerLink]="['/cycle']">
+              {{ 'Cycle' | transloco }}
+            </a>
+          </li>
+          <li class="nav-item pr-1" [routerLinkActive]="['link-active']">
+            <a class="nav-link" [routerLink]="['/montage']">
+              {{ 'Montage' | transloco }}
+            </a>
+          </li>
+          <li class="nav-item pr-1" [routerLinkActive]="['link-active']">
+            <a class="nav-link" [routerLink]="['/montage-review']">
+              {{ 'MontageReview' | transloco }}
+            </a>
+          </li>
+          <li class="nav-item pr-1" [routerLinkActive]="['link-active']">
+            <a class="nav-link" [routerLink]="['/audit']">
+              {{ 'ReportEventAudit' | transloco }}
+            </a>
+          </li>
+          <li class="nav-item pr-1" [routerLinkActive]="['link-active']">
+            <a class="nav-link" [routerLink]="['/notifications']">
+              {{ 'Notifications' | transloco }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -158,3 +158,5 @@ zm.conf
 zmconfgen.pl
 zmlinkcontent.sh
 **/.DS_Store
+/web/angular/package-lock.json
+/web/angular/src/.vs

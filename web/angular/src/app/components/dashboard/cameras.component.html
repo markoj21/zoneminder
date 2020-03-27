@@ -1,0 +1,67 @@
+<div class="card" [ngBusy]="busy">
+    <div class="card-header">
+        <div class="d-flex justify-content-between align-items-center">
+            {{ 'Cameras' | transloco }}
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-sm btn-outline-primary ml-3" (click)="refresh()">{{ 'Refresh' | transloco }}</button>
+                <button type="button" class="btn btn-sm btn-outline-primary ml-1">{{ 'Add' | transloco }}</button>
+                <button type="button" class="btn btn-sm btn-outline-primary ml-1">{{ 'Remove' | transloco }}</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Status</th>
+                <th scope="col">Function</th>
+                <th scope="col">Frame Rate</th>
+                <th scope="col">Data Rate</th>
+                <th scope="col">Total Data</th>
+                <th scope="col">Daily Data</th>
+                <th scope="col">Total Events</th>
+                <th scope="col">Daily Events</th>
+                <th scope="col">Zones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td><a href="#">Monitor-1</a></td>
+                <td><span class="badge badge-success">Capturing</span></td>
+                <td><a href="#">Mocord</a></td>
+                <td class="text-right">14.29/16.67 fps</td>
+                <td class="text-right">245.4 kB/s</td>
+                <td class="text-right">329.26 MB</td>
+                <td class="text-right">129.26 MB</td>                
+                <td class="text-center">35</td>
+                <td class="text-center">15</td>
+                <td class="text-center">2</td>
+                </tr>
+                <tr>
+                <td>Monitor-2</td>
+                <td><span class="badge badge-success">Capturing</span></td>
+                <td>Mocord</td>
+                <td class="text-right">23.99/23.99 fps</td>
+                <td class="text-right">611.2 kB/s</td>
+                <td class="text-right">1,1974.26 MB</td>
+                <td class="text-right">777.84 MB</td>                
+                <td class="text-center">35</td>
+                <td class="text-center">15</td>
+                <td class="text-center">2</td>
+                </tr>
+                <tr>
+                <td>Monitor-3</td>
+                <td><span class="badge badge-danger">Stopped</span></td>
+                <td>Mocord</td>
+                <td class="text-right">0.0/0.0 fps</td>
+                <td class="text-right">0.0 kB/s</td>
+                <td class="text-right">143.87 MB</td>
+                <td class="text-right">19.64 MB</td>                
+                <td class="text-center">35</td>
+                <td class="text-center">15</td>
+                <td class="text-center">2</td>
+                </tr>
+            </tbody>
+        </table>
+</div>

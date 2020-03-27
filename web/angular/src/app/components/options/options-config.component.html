@@ -1,0 +1,52 @@
+<div class="card" [ngBusy]="busy">
+    <div class="card-header">
+        <div class="d-flex justify-content-between align-items-center">
+            {{ 'Config' | transloco }}
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-sm btn-outline-primary ml-3" (click)="test()">{{ 'Save' | transloco }}</button>
+                <button type="button" class="btn btn-sm btn-outline-primary ml-1">{{ 'Cancel' | transloco }}</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row form-group">
+            <div class="col-md-3">
+                TIMESTAMP_ON_CAPTURE
+            </div>
+            <div class="col-md-6">
+                Timestamp images as soon as they are captured (<span popoverTitle="ZM_TIMESTAMP_ON_CAPTURE" popover="ZoneMinder can add a timestamp to images in two ways. The default method, when this option is set, is that each image is timestamped immediately when captured and so the image held in memory is marked right away. The second method does not timestamp the images until they are either saved as part of an event or accessed over the web. The timestamp used in both methods will contain the same time as this is preserved along with the image. The first method ensures that an image is timestamped regardless of any other circumstances but will result in all images being timestamped even those never saved or viewed. The second method necessitates that saved images are copied before being saved otherwise two timestamps perhaps at different scales may be applied. This has the (perhaps) desirable side effect that the timestamp is always applied at the same resolution so an image that has scaling applied will still have a legible and correctly scaled timestamp.">?</span>)
+            </div>
+            <div class="col-md-3">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                TIMESTAMP_CODE_CHAR
+            </div>
+            <div class="col-md-6">
+                Character to used to identify timestamp codes (?)
+            </div>
+            <div class="col-md-3">
+              <div>
+                <input type="text" class="form-control form-control-sm">
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                CPU_EXTENSIONS
+            </div>
+            <div class="col-md-6">
+                Use advanced CPU extensions to increase performance (?)
+            </div>
+            <div class="col-md-3">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

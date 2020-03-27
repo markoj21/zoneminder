@@ -1,0 +1,23 @@
+/*! `Custom` Bootstrap 4 theme */
+@import url(https://fonts.googleapis.com/css?family=Quicksand:200,300,400,700);
+$headings-font-family: Quicksand;
+$primary: #07689F;
+$secondary: #C9D6DF;
+$success: #11D3BC;
+$danger: #F67280;
+$info: #A2D5F2;
+$warning: #FF7E67;
+$light: #FAFAFA;
+$dark: #4e4e4e;
+$enable-gradients: true;
+$border-width: 1px;
+$btn-border-radius: .25rem;
+$enable-shadows: true;
+$enable-hover-media-query: true;
+$enable-responsive-font-sizes: true;
+$body-bg: #FFFFFF;
+$link-hover-color: darken($primary, 40%);
+$line-height-base: 1.2;
+@import "bootstrap";
+
+// Add SASS theme customizations here..
